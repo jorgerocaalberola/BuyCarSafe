@@ -3,51 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuyCarSafe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 2rem;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #0057b7;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        section {
-            background: white;
-            padding: 2rem;
-            margin-top: 1rem;
-            border-radius: 8px;
-        }
-        footer {
-            margin-top: 2rem;
-            text-align: center;
-            color: #555;
-        }
-    </style>
+    <title>BuyCarSafe - Revisión de coches usados</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>BuyCarSafe</h1>
-        <p>Tu asistente digital para revisar coches de segunda mano</p>
+        <div class="container">
+            <h1>BuyCarSafe</h1>
+            <nav>
+                <ul>
+                    <li><a href="#funciona">Cómo Funciona</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#formulario">Revisión</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section>
-        <h2>¿Qué hacemos?</h2>
-        <p>Te ayudamos a tomar decisiones seguras al comprar un cochasdfe usado. Evalúa rápidamente si merece la pena o si esconde problemas.</p>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Compra con confianza tu próximo coche</h2>
+            <p>Revisamos por ti los coches de segunda mano.</p>
+            <a href="#formulario" class="btn">Inicia tu revisión gratuita</a>
+        </div>
     </section>
 
-    <section>
-        <h2>Formulario de contacto (Próximamente)</h2>
-        <p>Muy pronto podrás enviarnos los datos del coche y recibir un diagnóstico inmediato.</p>
+    <section id="funciona" class="steps">
+        <div class="container">
+            <h2>¿Cómo funciona?</h2>
+            <div class="step-grid">
+                <div class="step">
+                    <h3>1. Envía los datos</h3>
+                    <p>Marca, modelo, año y kilómetros.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Analizamos</h3>
+                    <p>Verificamos historial y detectamos señales de alerta.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Recibe el informe</h3>
+                    <p>Te damos una recomendación clara y objetiva.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        &copy; 2026 BuyCarSafe
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2>¿Por qué usar BuyCarSafe?</h2>
+            <ul>
+                <li>✔ Seguridad y confianza</li>
+                <li>✔ Evita fraudes o sorpresas</li>
+                <li>✔ Ahorra tiempo y dinero</li>
+                <li>✔ Revisión imparcial</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="formulario" class="form-section">
+        <div class="container">
+            <h2>Solicita tu revisión</h2>
+            <form>
+                <input type="text" placeholder="Marca" required>
+                <input type="text" placeholder="Modelo" required>
+                <input type="number" placeholder="Año" required>
+                <input type="number" placeholder="Kilómetros" required>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <p>&copy; 2026 BuyCarSafe. Todos los derechos reservados.</p>
+            <p><a href="#">Aviso legal</a> | <a href="#">Política de privacidad</a></p>
+        </div>
     </footer>
 </body>
 </html>
